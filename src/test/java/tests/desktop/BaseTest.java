@@ -25,7 +25,7 @@ public abstract class BaseTest {
         Configuration.timeout = 100000;
         Configuration.pageLoadTimeout = 100000;
 
-        Configuration.remote = "http://localhost:4444/wd/hub";
+//        Configuration.remote = "http://localhost:4444/wd/hub";
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         System.setProperty("chromeoptions.args", "\"--no-sandbox\",\"--disable-dev-shm-usage\",\"--remote-debugging-port=9222\"");
     }
